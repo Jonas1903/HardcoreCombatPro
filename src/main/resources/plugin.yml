@@ -1,0 +1,17 @@
+name: HardcoreCombatPro
+version: '1.0.0'
+main: com.hardcorecombat.plugin.HardcoreCombatPro
+api-version: '1.21'
+author: HardcoreCombat
+description: Hardcore combat mechanics with safe zones for Paper 1.21.8
+
+commands:
+  ct:
+    description: Combat tag commands
+    usage: /ct <set1|set2>
+    permission: combat.admin
+
+permissions:
+  combat.admin:
+    description: Allows admin bypass for combat restrictions
+    default: op

@@ -1,0 +1,36 @@
+# HardcoreCombatPro Configuration
+
+# Combat tag duration in seconds
+combat-duration: 15
+
+# Messages
+messages:
+  combat-tagged: "<red>You are now in combat for {time} seconds!"
+  combat-over: "<green>You are no longer in combat."
+  combat-timer: "<red>Combat Status: {time}s remaining"
+  command-blocked: "<red>You cannot use commands while in combat!"
+  zone-entry-blocked: "<red>You cannot enter the safe zone while in combat!"
+  zone-set1: "<green>Safe zone position 1 set at {x}, {y}, {z}"
+  zone-set2: "<green>Safe zone position 2 set at {x}, {y}, {z}"
+  no-permission: "<red>You don't have permission to use this command!"
+
+# Safe zone settings
+safe-zone:
+  enabled: true
+  # Position 1 (corner 1 of cuboid)
+  pos1:
+    world: "world"
+    x: 0
+    y: 64
+    z: 0
+  # Position 2 (corner 2 of cuboid)
+  pos2:
+    world: "world"
+    x: 100
+    y: 100
+    z: 100
+  # Particle settings
+  particles:
+    enabled: true
+    type: "FLAME"
+    detection-distance: 5
